@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    background-color:#1e2d3b;
+    width: 100%;
+    
+}
+
+.row{
+    margin:0px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box{
+    width:calc(100% / 5 - 20px);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #2e3a46;
+}
+.box img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+h2{
+    color: #fff;
+}
+.text{
+    color: gray;
+}
