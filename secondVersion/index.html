@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+<!-- Vue2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+<!-- Axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>versione-html</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="https://cdn1.iconfinder.com/data/icons/artcorepart-4/512/spotify.png" alt="">
+        </header>
+
+
+        <main class="container">
+            <div class="row">     
+                <div class="box" v-for="disk in disksList">
+                    <img :src="disk.poster" :alt="disk.author">
+                    <h2>{{disk.title}}</h2>
+                    <div class="text">{{disk.author}}</div>
+                    <div class="text">{{disk.genre}}</div>
+                    <div class="text">{{disk.year}}</div>
+                </div>
+            </div>
+    
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
